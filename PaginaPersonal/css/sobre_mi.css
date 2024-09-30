@@ -1,0 +1,115 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+}
+
+body {
+    font-family: 'Krub', sans-serif;
+    background-color: var(--grisClaro);
+    color: var(--oscuro);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--secundario);
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold; /* Negrita para enlaces */
+    transition: color 0.3s; /* Transición suave para el hover */
+}
+
+nav ul li a:hover {
+    color: var(--primario); /* Cambia color al pasar el ratón */
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--blanco);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el texto */
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--primario);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin: 2rem 0 1rem 0;
+    color: var(--secundario);
+    font-weight: bold; /* Negrita para subtítulos */
+}
+
+p {
+    font-size: 1.2rem; /* Tamaño de fuente ajustado */
+    line-height: 1.6; /* Mejora el espaciado entre líneas */
+    margin-bottom: 1.5rem; /* Espacio inferior */
+}
+
+ul {
+    list-style: disc;
+    margin: 0 auto; /* Centra la lista */
+    padding-left: 0; /* Elimina el padding */
+    max-width: 600px; /* Limita el ancho */
+}
+
+ul li {
+    font-size: 1.2rem; /* Tamaño de fuente para la lista */
+    margin: 0.5rem 0; /* Espacio entre elementos */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem; /* Espacio superior para separación */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem; /* Tamaño de fuente para dispositivos pequeños */
+    }
+
+    h2 {
+        font-size: 2rem; /* Tamaño de fuente para dispositivos pequeños */
+    }
+
+    nav ul li {
+        margin: 0 0.5rem; /* Espacio reducido en móviles */
+    }
+
+    nav ul li a {
+        font-size: 1.4rem; /* Tamaño de fuente reducido para móviles */
+    }
+}

@@ -1,0 +1,85 @@
+:root {
+    --primario: #FFC107;
+}
+body {
+    font-family: 'Krub', sans-serif;
+    background-color: #E0F7FA;
+    color: #333;
+}
+
+.nav-bg {
+    background-color: #0097A7;
+    padding: 10px 0;
+}
+
+.navegacion-principal {
+    text-align: center;
+}
+
+.navegacion-principal ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navegacion-principal li {
+    display: inline;
+    margin: 0 15px; /* Separación entre elementos del menú */
+}
+
+.navegacion-principal a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.titulo-biografia {
+    text-align: center;
+    font-size: 2.5em; /* Tamaño de letra mayor */
+    margin-top: 20px;
+    color: var(--primario);
+}
+
+.biografia {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrar el texto */
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-around; /* Espacio entre las imágenes */
+    margin-bottom: 20px;
+}
+
+.imagenes img {
+    width: 45%; /* Ajustar el tamaño de las imágenes */
+    border-radius: 8px;
+}
+
+.contenido-biografia {
+    display: flex;
+    justify-content: space-around; /* Espacio entre las columnas de texto */
+}
+
+.texto-columna {
+    width: 45%; /* Ajustar el tamaño de las columnas */
+    text-align: center; /* Centrar texto en cada columna */
+}
+
+h2 {
+    color: #0097A7;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #E0F7FA;
+}
+
+.texto-negrita {
+    font-weight: bold;
+}

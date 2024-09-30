@@ -1,0 +1,136 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+}
+
+/* Globales */
+html {
+    text-align: center;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+  }
+  
+  body {
+    position: relative; /* Asegúrate de que el cuerpo tenga posición relativa */
+    margin: 0; /* Elimina los márgenes del cuerpo */
+    font-family: 'Krub', sans-serif;
+    height: 100vh
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(/img/redes.jpg) no-repeat center center fixed; /* Cambia esta línea por tu imagen */
+    background-size: cover;
+    filter: brightness(0.6); /* Ajusta el valor según lo que necesites (0 es negro, 1 es original) */
+    z-index: -1; /* Asegúrate de que esté detrás del contenido */
+}
+
+header {
+    background-color: var(--secundario);
+    padding: 1rem 0;
+}
+.mis_redes h1 {
+    color: var(--primario);
+    font-size: 3rem; /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Aplica negrita */
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem; /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Aplica negrita */
+    margin: 0 15px;
+}
+  .navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+  }
+  .navegacion-principal a:hover {
+    color: var(--primario); /* Cambiar color al pasar el mouse */
+}
+  .main {
+    padding: 2rem 0;
+  }
+  
+  .mis_redes {
+    margin: 20px auto;
+  }
+  
+  .mis_redes h1 {
+    color: var(--primario);
+  }
+
+  
+  footer {
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .icon {
+    display: block;
+    margin: 0 auto 1rem;
+    height: 80px;
+  }
+
+  .links {
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente */
+    display: inline-block; /* Cambia a inline-block para permitir el padding */
+    margin-top: 5px;
+    padding: 10px; /* Espacio interno para el cuadro */
+    border: 2px solid var(--primario); /* Borde del cuadro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: var(--blanco); /* Color de fondo del cuadro */
+    color: var(--oscuro); /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: bold; /* Aplica negrita */
+    transition: background-color 0.3s; /* Efecto al pasar el mouse */
+}
+
+.links:hover {
+    background-color: var(--primario); /* Cambia el fondo al pasar el mouse */
+    color: var(--blanco); /* Cambia el color del texto al pasar el mouse */
+}
+
+.icon-wrapper {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-color: var(--primario); /* Color amarillo principal */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.icon-wrapper:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+  background-color: var(--secundario); /* Cambia a color secundario al pasar el mouse */
+}
+
+.icon {
+  width: 40px;
+  fill: black; /* Color blanco para los íconos */
+}
+.icon {
+  width: 90px;
+  height: 90px;
+  fill: black; /* O el color que prefieras */
+}
